@@ -1,0 +1,72 @@
+/* You can remove these code below*/
+:root {
+  --primary: #08aeea;
+  --secondary: #13d2b8;
+  --purple: #bd93f9;
+  --pink: #ff6bcb;
+  --blue: #8be9fd;
+  --gray: #333;
+  --font: "Poppins", sans-serif;
+  --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+  --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+body {
+  background-color: #191a2b;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+input,
+button,
+textarea {
+  border: 0;
+  outline: none;
+}
+
+.text {
+  color: white;
+  margin-left: 450px;
+}
+/* Main code */
+
+.line-loading {
+  border-radius: 8px;
+  width: 60%;
+  height: 0.5rem;
+  position: relative;
+  margin: 190px auto;
+}
+
+.border {
+  width: 59.7%;
+  height: 0.5rem;
+  background-color: #fff;
+  position: absolute;
+  left: 260px;
+}
+
+.line-loading:before {
+  content: "";
+  position: absolute;
+  right: auto;
+  left: 0;
+  height: 100%;
+  background-color: var(--primary);
+  animation: lineLoading 1s forwards infinite linear;
+}
+
+@keyframes lineLoading {
+  0% {
+    right: 100%;
+  }
+  50% {
+    right: 0;
+    left: 0;
+  }
+  100% {
+    right: 0;
+    left: 100%;
+  }
+}
