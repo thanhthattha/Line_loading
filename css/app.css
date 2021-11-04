@@ -27,12 +27,12 @@ textarea {
 
 .text {
   color: white;
+  margin-top: 100px;
   margin-left: 450px;
 }
 /* Main code */
 
 .line-loading {
-  border-radius: 8px;
   width: 60%;
   height: 0.5rem;
   position: relative;
@@ -43,8 +43,8 @@ textarea {
   width: 59.7%;
   height: 0.5rem;
   background-color: #fff;
-  position: absolute;
-  left: 260px;
+  margin-top: -198px;
+  margin-left: 260px;
 }
 
 .line-loading:before {
